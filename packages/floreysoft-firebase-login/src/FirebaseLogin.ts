@@ -1,9 +1,8 @@
 import * as firebase from 'firebase/app';
 import * as firebaseui from 'firebaseui'
 import 'firebase/auth';
-import '../components/Dialog'
 import { LitElement, customElement, html, query, TemplateResult } from 'lit-element';
-import { Dialog } from '../components/Dialog';
+import { Dialog } from '@floreysoft/dialog';
 
 export interface AccountMerger {
     mergeAccounts(anonymousUser: firebase.User, authenticatedUser: firebase.User): Promise<void>
