@@ -3,11 +3,6 @@
   "version": "0.0.4",
   "description": "Tabs",
   "dependencies": {
-    "@floreysoft/dialog": "^0.0.4",
-    "firebase": "^5.8.1",
-    "firebase-app": "^0.0.1",
-    "firebase-auth": "^0.1.2",
-    "firebaseui": "^3.5.2",
     "lit-element": "^2.0.0-rc.5",
     "lit-html": "^1.0.0-rc.2"
   },
