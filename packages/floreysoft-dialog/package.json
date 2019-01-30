@@ -1,0 +1,8 @@
+{
+  "name": "@floreysoft/dialog",
+  "version": "0.0.1",
+  "dependencies": {
+    "lit-element": "^2.0.0-rc.5",
+    "lit-html": "^1.0.0-rc.2"
+  }
+}
