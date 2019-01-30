@@ -5,11 +5,11 @@
         "strictNullChecks": true, // enable strict null checks as a best practice
         "module": "es6", // specify module code generation
         "target": "es6", // specify ECMAScript target version
-        "allowJs": true, // allow a partial TypeScript and JavaScript codebase
         "lib": [
             "es2018",
             "dom"
         ],
+        "declaration": true,
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "downlevelIteration": true,
