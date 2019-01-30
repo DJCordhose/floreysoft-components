@@ -1,9 +1,9 @@
 {
   "name": "@floreysoft/tabs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Tabs",
   "dependencies": {
-    "@floreysoft/dialog": "^0.0.1",
+    "@floreysoft/dialog": "^0.0.3",
     "firebase": "^5.8.1",
     "firebase-app": "^0.0.1",
     "firebase-auth": "^0.1.2",
