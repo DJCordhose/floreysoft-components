@@ -1,8 +1,8 @@
 {
   "name": "@floreysoft/firebase-login",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {
-    "@floreysoft/dialog": "^0.0.4",
+    "@floreysoft/dialog": "^0.0.5",
     "firebase-app": "^0.0.1",
     "firebase-auth": "^0.1.2",
     "firebaseui": "^3.5.2",

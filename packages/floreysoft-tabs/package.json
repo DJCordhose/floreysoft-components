@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/tabs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Tabs",
   "dependencies": {
     "lit-element": "^2.0.0-rc.5",
