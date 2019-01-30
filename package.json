@@ -5,9 +5,10 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.10.7"
+    "lerna": "^3.10.7",
+    "typescript": "^3.2.4"
   },
   "scripts": {
-    "pub" : "lerna run tsc && lerna publish"
+    "pub": "lerna run tsc && lerna publish"
   }
 }
