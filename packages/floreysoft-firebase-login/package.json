@@ -12,5 +12,10 @@
   "main": "./dist/FirebaseLogin.js",
   "scripts": {
     "tsc": "tsc"
-  }
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "37e178b0e6870294114cfd6d1df7793f625e4d01"
 }
