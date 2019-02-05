@@ -13,7 +13,20 @@ export class Dialog extends LitElement {
     @property({type:Boolean, reflect: true}) open : boolean
     @property() header: string
     @property({type: Object}) context : any
-    @query("dialog") _dialog: HTMLDialogElement
+    @query(".dialog") _dialog: HTMLDialogElement
+    @query(".dialogWrapper") _dialogWrapper: HTMLDialogElement
+
+    private x: number
+    private y: number
+    private top: string
+    private left: string
+    private dragging: boolean
+
+    constructor() {
+        super()
+        this.top = "0"
+        this.left = "0"
+    }
 
     render() {
         if ( !this.buttons ) return
@@ -42,7 +55,6 @@ export class Dialog extends LitElement {
             flex-direction: column;
             opacity: 0;
             background-color: #fefefe;
-            margin: 15% auto;
             max-height: 80%;
             min-width: 350px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -67,6 +79,7 @@ export class Dialog extends LitElement {
             font-family: var(--lumo-font-family);
             font-size: var(--lumo-font-size-m);
             padding: var(--lumo-space-m);
+            cursor: move;
         }
         section {
             padding: var(--lumo-space-m);
@@ -82,17 +95,40 @@ export class Dialog extends LitElement {
         }
         </style>
         <div class="backdrop ${this.open ? "open" : ""}"></div>
-        <div class="dialogWrapper">
+        <div class="dialogWrapper" @mouseup=${this.endDrag} @mousemove=${this.drag}>
         <div class="dialog ${this.open ? "open" : ""}">
-            <header>${this.header}</header>
+            <header @mousedown=${this.startDrag}>${this.header}</header>
             <section><slot></slot></section>
             <footer>${this.buttons.map(button => html`<vaadin-button theme="${ifDefined(typeof button == "string" ? "primary" : button.theme)}" @click=${(e : Event) => this.optionSelected((typeof button == "string" ? button : button.id), this.context)}>${typeof button == "string" ? button : button.label}</vaadin-button>`)}</footer>
-        </div></div<`
+        </div></div>`
     }
 
     optionSelected(option : string, context: any) {
         if (this.dispatchEvent(new CustomEvent('selected', { detail : { option, context}, cancelable: true }))) {
             this.open = false
+        }
+    }
+
+    protected startDrag(e : MouseEvent) {
+        let left = this._dialog.style.left ? parseInt(this._dialog.style.left,10) : 0
+        let top = this._dialog.style.top ? parseInt(this._dialog.style.top,10) : 0
+        this.x = e.screenX - left
+        this.y = e.screenY - top  
+        this.dragging = true;
+        this._dialogWrapper.style.pointerEvents = "auto"
+    }
+
+    protected endDrag(e : MouseEvent) {
+        this.dragging = false;
+        this._dialogWrapper.style.pointerEvents = "none"
+    }
+
+    protected drag(e : MouseEvent) {
+        e.preventDefault
+        e.stopPropagation
+        if ( this.dragging ) {
+            this._dialog.style.left = (e.screenX - this.x)+"px"
+            this._dialog.style.top = (e.screenY - this.y)+"px"
         }
     }
 }
