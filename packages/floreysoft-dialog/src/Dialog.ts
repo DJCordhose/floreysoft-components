@@ -12,20 +12,18 @@ export class Dialog extends LitElement {
     @property({type: Array}) buttons: any[]
     @property({type:Boolean, reflect: true}) open : boolean
     @property() header: string
+    @property() theme: string
     @property({type: Object}) context : any
     @query(".dialog") _dialog: HTMLDialogElement
     @query(".dialogWrapper") _dialogWrapper: HTMLDialogElement
 
     private x: number
     private y: number
-    private top: string
-    private left: string
     private dragging: boolean
 
     constructor() {
         super()
-        this.top = "0"
-        this.left = "0"
+        this.theme = ""
     }
 
     render() {
@@ -77,12 +75,18 @@ export class Dialog extends LitElement {
             background-color: var(--lumo-contrast);
             color: var(--lumo-primary-contrast-color);
             font-family: var(--lumo-font-family);
-            font-size: var(--lumo-font-size-m);
+            font-size: var(--lumo-font-size-l);
             padding: var(--lumo-space-m);
             cursor: move;
         }
+        header.success {
+            background-color: var(--lumo-success-color);
+        }
+        header.error {
+            background-color: var(--lumo-error-color);
+        }
         section {
-            padding: var(--lumo-space-m);
+            padding: var(--floreysoft-dialog-padding, var(--lumo-space-m));
             overflow-y: auto;
         }
         footer {
@@ -97,7 +101,7 @@ export class Dialog extends LitElement {
         <div class="backdrop ${this.open ? "open" : ""}"></div>
         <div class="dialogWrapper" @mouseup=${this.endDrag} @mousemove=${this.drag}>
         <div class="dialog ${this.open ? "open" : ""}">
-            <header @mousedown=${this.startDrag}>${this.header}</header>
+            <header class="${this.theme}" @mousedown=${this.startDrag}>${this.header}</header>
             <section><slot></slot></section>
             <footer>${this.buttons.map(button => html`<vaadin-button theme="${ifDefined(typeof button == "string" ? "primary" : button.theme)}" @click=${(e : Event) => this.optionSelected((typeof button == "string" ? button : button.id), this.context)}>${typeof button == "string" ? button : button.label}</vaadin-button>`)}</footer>
         </div></div>`
