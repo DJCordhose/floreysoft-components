@@ -40,7 +40,7 @@ export class Dialog extends LitElement {
             align-items: center;
             justify-content: center;
             pointer-events: none;
-            z-index: 1;
+            z-index: 3;
         }
         .backdrop {
             opacity: 0;
@@ -72,7 +72,7 @@ export class Dialog extends LitElement {
             transition-timing-function: cubic-bezier(.12, .32, .54, 1.5);
         }
         header {
-            background-color: var(--lumo-contrast);
+            background-color: var(--lumo-shade);
             color: var(--lumo-primary-contrast-color);
             font-family: var(--lumo-font-family);
             font-size: var(--lumo-font-size-l);
@@ -87,10 +87,11 @@ export class Dialog extends LitElement {
         }
         section {
             padding: var(--floreysoft-dialog-padding, var(--lumo-space-m));
+            background-color: var(--lumo-base-color);
             overflow-y: auto;
         }
         footer {
-            background-color: var(--lumo-contrast-5pct);
+            background-color: var(--lumo-base-color);
             padding: var(--lumo-space-xs) var(--lumo-space-m);
             text-align: right;
         }

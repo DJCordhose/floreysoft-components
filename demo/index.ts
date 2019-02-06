@@ -1,2 +1,11 @@
+import '@vaadin/vaadin-lumo-styles/color.js';
+import '@vaadin/vaadin-lumo-styles/sizing.js';
+import '@vaadin/vaadin-lumo-styles/spacing.js';
+import '@vaadin/vaadin-lumo-styles/style.js';
+import '@vaadin/vaadin-lumo-styles/typography.js';
+import '@vaadin/vaadin-split-layout/vaadin-split-layout.js';
+import '@vaadin/vaadin-button/vaadin-button.js';
 import '../packages/floreysoft-tabs/src/Tabs'
+import '../packages/floreysoft-dialog/src/Dialog'
+import '../packages/floreysoft-tree/src/Tree'
 import './Demo.ts'

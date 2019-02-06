@@ -199,15 +199,17 @@ export class Tree extends LitElement {
     updated() {
         this._slot.assignedNodes().forEach(nestedTree => {
             this.hasNodes = true
-            if ( nestedTree instanceof Element) {
+            if ( nestedTree instanceof Tree) {
                 if (!nestedTree.getAttribute("observed")) {
+                    nestedTree.level = this.level+1
+                    nestedTree.indent =  this.indent
                     nestedTree.addEventListener("stateChanged", (e: CustomEvent) => this.adjustMaxHeight(e))
                     nestedTree.addEventListener("action", (e: CustomEvent) => this.do(e.detail))
                     nestedTree.setAttribute("observed", "true")
                 }
             }
         })
-        this._nestedTrees.forEach(nestedTree => {
+        this._nestedTrees.forEach((nestedTree : Tree ) => {
             this.hasNodes = true
             nestedTree.addEventListener("stateChanged", (e: CustomEvent) => this.adjustMaxHeight(e))
             nestedTree.addEventListener("action", (e: CustomEvent) => this.do(e.detail))
