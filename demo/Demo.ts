@@ -12,6 +12,9 @@ export class Demo extends LitElement {
                 margin-top: var(--lumo-space-l);
                 border-top: 1px solid var(--lumo-primary-color-10pct);
             }
+            a {
+                color: var(--lumo-primary-color);
+            }
         `]
     }
 
@@ -19,7 +22,8 @@ export class Demo extends LitElement {
         return html`
         <div style="padding:0 20px">
             <h3>Tabs</h3>
-            <p>Supporting keyboard navigation, closeable tabs and simple usage</p>
+            <p>Supporting keyboard navigation, closeable tabs and simple usage.<br>
+            Size: <a href="https://bundlephobia.com/result?p=@floreysoft/tabs" target="_size">4.47 kB (minified), 1.5 kB (gzipped)</a></p>
         </div>
         <fs-tabs>
             <fs-tab label="First">
@@ -32,7 +36,8 @@ export class Demo extends LitElement {
         </fs-tabs>
         <div style="padding:0 20px">
             <h3>Dialog</h3>
-            <p>Supports dragging and simple header and action configuration</p>
+            <p>Supports dragging and simple header and action configuration<br>
+            Size: <a href="https://bundlephobia.com/result?p=@floreysoft/dialog" target="_size">4.47 kB (minified), 1.5 kB (gzipped)</a></p>
             <vaadin-button @click=${e => this.openDialog("simpleDialog")}>Simple</vaadin-button>
             <vaadin-button @click=${e => this.openDialog("optionsDialog")}>Options</vaadin-button>
             <vaadin-button @click=${e => this.openDialog("errorDialog")}>Error</vaadin-button>
@@ -45,14 +50,7 @@ export class Demo extends LitElement {
             made a big mistake!</fs-dialog>
         <div style="padding:0 20px">
             <h3>Tree</h3>
-            <p>Features:</p>
-            <ul>
-                <li>lazy loading of tree nodes</li>
-                <li>lazy loading of children in chunks on scroll</li>
-                <li>nice animation on open</li>
-                <li>broken keyboard navigation</li>
-                <li>individual context actions on nodes</li>
-            </ul>
+            <p>Lazy loading of tree nodes, lazy loading of children in chunks on scroll, nice animation on open, individual context actions on nodes</p>
         </div>
         <fs-tree header="My drive" indent=20>
             <fs-tree header="File 1"></fs-tree>
