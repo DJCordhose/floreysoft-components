@@ -74,20 +74,20 @@ export class Tabs extends LitElement {
         .tabs {
             display: flex;
             flex-wrap: wrap;
-            box-shadow: inset 0 -1px 0 0 var(--lumo-contrast-10pct);
+            box-shadow: inset 0 -1px 0 0 var(--lumo-contrast-10pct, #1a39601a);
             position: relative;        
         }
         .tab {
-            color: var(--lumo-tertiary-text-color);
+            color: var(--lumo-tertiary-text-color, #1c304a80);
             box-sizing: border-box;
             padding: 0.5rem 0.75rem;
-            font-family: var(--lumo-font-family);
-            font-size: var(--lumo-font-size-m);
-            line-height: var(--lumo-line-height-xs);
+            font-family: var(--lumo-font-family, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+            font-size: var(--lumo-font-size-m, 1rem);
+            line-height: var(--lumo-line-height-xs, 1.25);
             font-weight: 500;
             text-align: center;
             opacity: 1;
-            color: var(--lumo-contrast-60pct);
+            color: var(--lumo-contrast-60pct, #1c2e459c);
             transition: 0.15s color, 0.2s transform;
             flex-shrink: 0;
             display: flex;
@@ -99,10 +99,10 @@ export class Tabs extends LitElement {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow: hidden;
-            min-width: var(--lumo-size-m);
+            min-width: var(--lumo-size-m, 2.25rem);
         }        
         .tab.selected {
-            color: var(--lumo-primary-text-color);
+            color: var(--lumo-primary-text-color, #1676f3);
             transition: 0.6s color;
         }
         .tab::before, .tab::after {
@@ -111,10 +111,10 @@ export class Tabs extends LitElement {
             display: var(--_lumo-tab-marker-display, block);
             bottom: 0;
             left: 50%;
-            width: var(--lumo-size-s);
+            width: var(--lumo-size-s, 1.875rem);
             height: 2px;
-            background-color: var(--lumo-contrast-60pct);
-            border-radius: var(--lumo-border-radius) var(--lumo-border-radius) 0 0;
+            background-color: var(--lumo-contrast-60pct, #1c2e459c);
+            border-radius: var(--lumo-border-radius, 0.25em) var(--lumo-border-radius, 0.25em) 0 0;
             transform: translateX(-50%) scale(0);
             transform-origin: 50% 100%;
             transition: 0.14s transform cubic-bezier(.12, .32, .54, 1);
@@ -123,7 +123,7 @@ export class Tabs extends LitElement {
         .tab.selected::before, .tab.selected::after {
             transform: translateX(-50%) scale(1);
             transition-timing-function: cubic-bezier(.12, .32, .54, 1.5);
-            background-color: var(--lumo-primary-color);
+            background-color: var(--lumo-primary-color, #1676f3);
         }
         .close {
             display: inline-block;
@@ -135,17 +135,17 @@ export class Tabs extends LitElement {
             line-height: 1;
         }
         .close-x {
-            stroke: var(--lumo-tertiary-text-color);
+            stroke: var(--lumo-tertiary-text-color, #1c304a80);
             fill: transparent;
             stroke-linecap: round;
             stroke-width: 6;
             transition: .1s all linear; 
         }
         .close:hover {
-            background: var(--lumo-contrast-10pct);
+            background: var(--lumo-contrast-10pct, #1a39601a);
         }
         .close:hover .close-x {
-            stroke: var(--lumo-primary-text-color);
+            stroke: var(--lumo-primary-text-color, #1676f3);
         }
         svg {
             width: 0.6em;
