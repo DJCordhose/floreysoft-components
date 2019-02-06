@@ -3,8 +3,8 @@
   "version": "0.0.8",
   "description": "Tabs",
   "dependencies": {
-    "lit-element": "^2.0.0-rc.5",
-    "lit-html": "^1.0.0-rc.2"
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "main": "./dist/Tabs.js",
   "scripts": {

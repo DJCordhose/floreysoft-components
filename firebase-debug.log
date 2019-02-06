@@ -1,0 +1,228 @@
+[debug] [2019-02-06T13:10:46.978Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T13:10:46.994Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Daniel Florey\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T13:10:46.994Z] CLI Version:   6.3.1
+[debug] [2019-02-06T13:10:46.994Z] Platform:      win32
+[debug] [2019-02-06T13:10:46.994Z] Node Version:  v8.9.4
+[debug] [2019-02-06T13:10:46.994Z] Time:          Wed Feb 06 2019 14:10:46 GMT+0100 (W. Europe Standard Time)
+[debug] [2019-02-06T13:10:46.994Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T13:10:46.994Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T13:10:46.994Z] > authorizing via signed-in user
+[debug] [2019-02-06T13:10:46.994Z] [iam] checking project floreysoft-components for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T13:10:46.994Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/floreysoft-components:testIamPermissions  
+
+[debug] [2019-02-06T13:10:47.828Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T13:10:47.828Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/floreysoft-components  
+ 
+[debug] [2019-02-06T13:10:48.152Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'floreysoft-components'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T13:10:48.159Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions  
+
+[debug] [2019-02-06T13:10:49.163Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T13:10:49.163Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T13:10:49.244Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 13:10:47 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/floreysoft-components/versions",
+        "path": "/v1beta1/sites/floreysoft-components/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T13:15:54.713Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T13:15:54.713Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Daniel Florey\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T13:15:54.713Z] CLI Version:   6.3.1
+[debug] [2019-02-06T13:15:54.713Z] Platform:      win32
+[debug] [2019-02-06T13:15:54.713Z] Node Version:  v8.9.4
+[debug] [2019-02-06T13:15:54.713Z] Time:          Wed Feb 06 2019 14:15:54 GMT+0100 (W. Europe Standard Time)
+[debug] [2019-02-06T13:15:54.713Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T13:15:54.713Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T13:15:54.713Z] > authorizing via signed-in user
+[debug] [2019-02-06T13:15:54.713Z] [iam] checking project floreysoft-components for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T13:15:54.713Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/floreysoft-components:testIamPermissions  
+
+[debug] [2019-02-06T13:15:55.595Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T13:15:55.602Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/floreysoft-components  
+ 
+[debug] [2019-02-06T13:15:55.920Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'floreysoft-components'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T13:15:55.967Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions  
+
+[debug] [2019-02-06T13:15:56.982Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T13:15:56.982Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T13:15:57.147Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 13:15:54 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/floreysoft-components/versions",
+        "path": "/v1beta1/sites/floreysoft-components/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T13:18:08.289Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T13:18:08.291Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Daniel Florey\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T13:18:08.291Z] CLI Version:   6.3.1
+[debug] [2019-02-06T13:18:08.291Z] Platform:      win32
+[debug] [2019-02-06T13:18:08.291Z] Node Version:  v8.9.4
+[debug] [2019-02-06T13:18:08.291Z] Time:          Wed Feb 06 2019 14:18:08 GMT+0100 (W. Europe Standard Time)
+[debug] [2019-02-06T13:18:08.291Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T13:18:08.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T13:18:08.294Z] > authorizing via signed-in user
+[debug] [2019-02-06T13:18:08.294Z] [iam] checking project floreysoft-components for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T13:18:08.294Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/floreysoft-components:testIamPermissions  
+
+[debug] [2019-02-06T13:18:09.158Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T13:18:09.164Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/floreysoft-components  
+ 
+[debug] [2019-02-06T13:18:09.515Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'floreysoft-components'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T13:18:09.531Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions  
+
+[debug] [2019-02-06T13:18:10.570Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T13:18:10.570Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T13:18:10.722Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 13:18:08 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/floreysoft-components/versions",
+        "path": "/v1beta1/sites/floreysoft-components/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/floreysoft-components/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
