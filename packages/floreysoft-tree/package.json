@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/tree",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Tree",
   "dependencies": {
     "lit-element": "^2.0.0-rc.5",
