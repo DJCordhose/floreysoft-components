@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Tree",
   "dependencies": {
-    "lit-element": "^2.0.0-rc.5",
-    "lit-html": "^1.0.0-rc.2"
+    "lit-element": "^2.0.1"
   },
   "main": "./dist/Tree.js",
   "scripts": {
