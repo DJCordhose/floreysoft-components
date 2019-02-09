@@ -145,6 +145,8 @@ export class Tree extends LitElement {
                 leaf = false
                 if (this.node.nodes) {
                     for (let node of this.node.nodes) {
+                        console.log("Indent="+this.indent)
+
                         templates.push(html`<fs-tree level=${this.level+1} indent=${this.indent} .node=${node} .nodeManager=${this.nodeManager}></fs-tree>`)
                     }
                     if (this.node.hasMore) {
@@ -201,8 +203,12 @@ export class Tree extends LitElement {
             this.hasNodes = true
             if ( nestedTree instanceof Tree) {
                 if (!nestedTree.getAttribute("observed")) {
-                    nestedTree.level = this.level+1
-                    nestedTree.indent =  this.indent
+                    if( typeof nestedTree.level === "undefined" ) {
+                        nestedTree.level = this.level+1
+                    }
+                    if( typeof nestedTree.indent === "undefined" ) {
+                        nestedTree.indent =  this.indent
+                    }
                     nestedTree.addEventListener("stateChanged", (e: CustomEvent) => this.adjustMaxHeight(e))
                     nestedTree.addEventListener("action", (e: CustomEvent) => this.do(e.detail))
                     nestedTree.setAttribute("observed", "true")
