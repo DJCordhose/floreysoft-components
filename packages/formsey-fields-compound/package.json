@@ -1,9 +1,9 @@
 {
   "name": "@floreysoft/formsey-fields-compound",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Compound fields",
   "dependencies": {
-    "@floreysoft/formsey-core": "^0.2.3",
+    "@floreysoft/formsey-core": "^0.2.4",
     "lit-element": "^2.0.1"
   },
   "main": "./dist/index.js",

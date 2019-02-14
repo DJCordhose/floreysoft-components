@@ -1,9 +1,9 @@
 {
   "name": "@floreysoft/formsey-fields-material",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Material design fields",
   "dependencies": {
-    "@floreysoft/formsey-core": "^0.2.3",
+    "@floreysoft/formsey-core": "^0.2.4",
     "@material/mwc-checkbox": "^0.3.3",
     "lit-element": "^2.0.1"
   },
