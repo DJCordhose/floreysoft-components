@@ -1,6 +1,5 @@
-import { LitElement, TemplateResult, customElement, property, html, query, queryAll, css, CSSResult } from "lit-element";
+import { LitElement, customElement, property, html, css, CSSResult } from "lit-element";
 import { Dialog } from '../packages/floreysoft-dialog'
-import { NodePart } from "lit-html";
 
 @customElement("fs-demo-section")
 export class DemoSection extends LitElement {

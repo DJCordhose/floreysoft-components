@@ -3,10 +3,7 @@
   "version": "0.2.3",
   "description": "Formsey core components",
   "dependencies": {
-    "@vaadin/vaadin-text-field": "^2.3.2",
-    "ace-builds": "^1.4.2",
-    "lit-element": "^2.0.1",
-    "signature_pad": "^3.0.0-beta.3"
+    "lit-element": "^2.0.1"
   },
   "main": "./dist/index.js",
   "scripts": {
