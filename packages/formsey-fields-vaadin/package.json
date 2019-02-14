@@ -10,7 +10,7 @@
     "lit-element": "^2.0.1",
     "signature_pad": "^3.0.0-beta.3"
   },
-  "main": "./dist/Tree.js",
+  "main": "./dist/index.js",
   "scripts": {
     "tsc": "tsc"
   },
@@ -18,5 +18,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "37e178b0e6870294114cfd6d1df7793f625e4d01"
+  "gitHead": "1e92508f55dd945e5d11661ea91315db1bedbe62"
 }
