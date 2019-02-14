@@ -20,15 +20,12 @@
     "webpack-merge": "^4.2.1"
   },
   "scripts": {
+    "dependencies": "lerna bootstrap",
     "compile": "lerna run tsc",
     "build": "webpack --config webpack.prod.js",
     "pub": "lerna run tsc && lerna publish",
     "start": "webpack-dev-server --open  --config webpack.dev.js"
   },
   "dependencies": {
-    "@vaadin/vaadin-button": "^2.1.2",
-    "@vaadin/vaadin-context-menu": "^4.3.0",
-    "@vaadin/vaadin-lumo-styles": "^1.4.1",
-    "@vaadin/vaadin-split-layout": "^4.1.0"
   }
 }
