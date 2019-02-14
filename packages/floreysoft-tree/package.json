@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/tree",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Tree",
   "dependencies": {
     "@vaadin/vaadin-text-field": "^2.3.2",

@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/dialog",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "dependencies": {
     "@vaadin/vaadin-text-field": "^2.3.2",
     "ace-builds": "^1.4.2",
