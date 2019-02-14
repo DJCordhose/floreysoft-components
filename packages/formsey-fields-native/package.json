@@ -1,5 +1,5 @@
 {
-  "name": "@formsey/fields-native",
+  "name": "@floreysoft/formsey-fields-native",
   "version": "0.2.0",
   "description": "Native fields",
   "dependencies": {
