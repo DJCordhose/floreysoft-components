@@ -1,6 +1,6 @@
 {
   "name": "@formsey/fields-vaadin",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Vaadin fields",
   "dependencies": {
     "@formsey/core": "^0.2.0",
