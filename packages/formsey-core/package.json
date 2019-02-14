@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-core",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "Formsey core components",
   "dependencies": {
     "@vaadin/vaadin-text-field": "^2.3.2",
