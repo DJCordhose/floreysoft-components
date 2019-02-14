@@ -31,7 +31,7 @@ export class FormField extends ComplexField<FormDefinition, Object> {
 
   private _value: Object
   private _definition: FormDefinition
-
+ 
   renderStyles() {
     return `
       .colspan-2 {
