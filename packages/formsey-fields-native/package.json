@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Native fields",
   "dependencies": {
-    "@formsey/core": "^0.2.0",
+    "@floreysoft/formsey-core": "^0.2.0",
     "@vaadin/vaadin-text-field": "^2.3.2",
     "ace-builds": "^1.4.2",
     "lit-element": "^2.0.1",

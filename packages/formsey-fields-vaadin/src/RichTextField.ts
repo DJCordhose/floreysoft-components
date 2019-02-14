@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-rich-text-editor/vaadin-rich-text-editor.js';
 import { html, property } from 'lit-element';
-import { Field, ValueChangedEvent, FieldDefinition } from '@formsey/core';
+import { Field, ValueChangedEvent, FieldDefinition } from '@floreysoft/formsey-core';
 
 export class RichTextField extends Field<FieldDefinition, string> {
   @property()

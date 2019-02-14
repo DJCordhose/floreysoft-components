@@ -1,6 +1,6 @@
 import { html, property } from 'lit-element';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html';
-import { Field, FieldDefinition } from '@formsey/core';
+import { Field, FieldDefinition } from '@floreysoft/formsey-core';
 
 export class MarkupField extends Field<FieldDefinition, string> {
   @property({ converter: Object })

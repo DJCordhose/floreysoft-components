@@ -24,7 +24,7 @@ import './ImageField';
 import './YouTubeField';
 import './UploadField';
 
-import { FieldFactory, FieldDefinition } from '@formsey/core';
+import { FieldFactory, FieldDefinition } from '@floreysoft/formsey-core';
 
 export class VaadinFieldFactory extends FieldFactory {
   supportedFieldTypes = {

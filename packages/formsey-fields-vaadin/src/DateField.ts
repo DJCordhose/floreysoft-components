@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-date-picker'
 import { html, property, customElement } from 'lit-element';
-import { Field, DateFieldDefinition } from '@formsey/core';
+import { Field, DateFieldDefinition } from '@floreysoft/formsey-core';
 import { ifDefined} from 'lit-html/directives/if-defined.js';
 
 @customElement("formsey-date")

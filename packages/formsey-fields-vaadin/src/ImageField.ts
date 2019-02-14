@@ -1,5 +1,5 @@
 import { customElement, html, property } from 'lit-element';
-import { Field, ImageFieldDefinition } from '@formsey/core';
+import { Field, ImageFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-image")
 export class ImageField extends Field<ImageFieldDefinition, string> {

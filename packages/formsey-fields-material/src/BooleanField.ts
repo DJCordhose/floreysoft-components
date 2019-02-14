@@ -1,6 +1,6 @@
 import "@material/mwc-checkbox/mwc-checkbox.js";
 import { html, property } from 'lit-element';
-import { Field, BooleanFieldDefinition } from '@formsey/core';
+import { Field, BooleanFieldDefinition } from '@floreysoft/formsey-core';
 
 export class BooleanField extends Field<BooleanFieldDefinition, boolean> {
   @property({ type: Boolean })

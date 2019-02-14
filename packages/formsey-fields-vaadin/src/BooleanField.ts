@@ -1,7 +1,7 @@
 import "@vaadin/vaadin-checkbox/vaadin-checkbox.js";
 import { customElement, html, property, query } from 'lit-element';
 import { CheckboxElement } from "@vaadin/vaadin-checkbox";
-import { Field, ValueChangedEvent, BooleanFieldDefinition } from '@formsey/core';
+import { Field, ValueChangedEvent, BooleanFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-boolean")
 export class BooleanField extends Field<BooleanFieldDefinition, boolean> {

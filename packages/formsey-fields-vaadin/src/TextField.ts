@@ -1,6 +1,6 @@
 import "@vaadin/vaadin-text-field/vaadin-text-area.js";
 import { html, property } from 'lit-element';
-import { Field, TextFieldDefinition } from '@formsey/core';
+import { Field, TextFieldDefinition } from '@floreysoft/formsey-core';
 import { ifDefined } from "lit-html/directives/if-defined";
 
 export class TextField extends Field<TextFieldDefinition, string> {

@@ -1,5 +1,5 @@
 import { html, property, customElement } from 'lit-element';
-import { Field, DateFieldDefinition } from '@formsey/core';
+import { Field, DateFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-date")
 export class DateField extends Field<DateFieldDefinition, string> {

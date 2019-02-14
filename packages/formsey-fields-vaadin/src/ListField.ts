@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-combo-box/vaadin-combo-box.js';
 import { html, property } from 'lit-element';
-import { Field, ValueChangedEvent, ListFieldDefinition } from '@formsey/core';
+import { Field, ValueChangedEvent, ListFieldDefinition } from '@floreysoft/formsey-core';
 
 
 export class ListField extends Field<ListFieldDefinition, string> {

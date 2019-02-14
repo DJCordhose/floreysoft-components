@@ -1,5 +1,5 @@
 import { html, property, customElement } from 'lit-element';
-import { Field, BooleanFieldDefinition } from '@formsey/core';
+import { Field, BooleanFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-boolean")
 export class BooleanField extends Field<BooleanFieldDefinition, boolean> {

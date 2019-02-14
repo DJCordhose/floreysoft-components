@@ -2,7 +2,7 @@ import { html, property, query, customElement, PropertyValues } from 'lit-elemen
 import ace from 'ace-builds/src-min-noconflict/ace.js'
 import "./webpack-resolver";
 import "ace-builds/src-min-noconflict/mode-javascript";
-import { Field, ValueChangedEvent, FieldDefinition } from '@formsey/core';
+import { Field, ValueChangedEvent, FieldDefinition } from '@floreysoft/formsey-core';
 
 export class SourceCodeField extends Field<FieldDefinition, string> {
   @property({ type: String })

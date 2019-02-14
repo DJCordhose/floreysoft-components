@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-combo-box/vaadin-combo-box.js';
 import { TemplateResult, html, property, customElement } from 'lit-element';
-import { ValueChangedEvent, Field, CheckboxesFieldDefinition, Option } from '@formsey/core';
+import { ValueChangedEvent, Field, CheckboxesFieldDefinition, Option } from '@floreysoft/formsey-core';
 import { TextfieldElement } from '@vaadin/vaadin-text-field';
 import { ifDefined } from 'lit-html/directives/if-defined';
 

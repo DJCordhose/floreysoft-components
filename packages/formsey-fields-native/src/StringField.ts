@@ -1,5 +1,5 @@
 import { html, property, customElement } from 'lit-element';
-import { Field, StringFieldDefinition } from '@formsey/core';
+import { Field, StringFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-string")
 export class StringField extends Field<StringFieldDefinition, string> {

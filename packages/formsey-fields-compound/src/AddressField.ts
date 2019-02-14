@@ -1,5 +1,5 @@
 import { html, property } from 'lit-element';
-import { ValueChangedEvent, CompoundField, FieldDefinition } from '@formsey/core';
+import { ValueChangedEvent, CompoundField, FieldDefinition } from '@floreysoft/formsey-core';
 
 export interface AddressFieldDefinition extends FieldDefinition {
   includeAddressLine1 : boolean

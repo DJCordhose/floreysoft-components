@@ -7,7 +7,7 @@ import './DateField';
 import './SignatureField';
 import './FormField';
 
-import { FieldFactory, FieldDefinition } from '@formsey/core';
+import { FieldFactory, FieldDefinition } from '@floreysoft/formsey-core';
 
 export class NativeFieldFactory extends FieldFactory {
   supportedFieldTypes = {

@@ -1,6 +1,6 @@
 import { html, property, query } from 'lit-element';
 import { ifDefined } from 'lit-html/directives/if-defined.js';
-import { Field, StringFieldDefinition } from '@formsey/core';
+import { Field, StringFieldDefinition } from '@floreysoft/formsey-core';
 
 export class StringField extends Field<StringFieldDefinition, string> {
   @property({ type: String })

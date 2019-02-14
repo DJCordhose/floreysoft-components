@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-combo-box/vaadin-combo-box.js';
 import { html, property } from 'lit-element';
-import { ComplexField, ValueChangedEvent, SelectableSectionFieldDefinition } from '@formsey/core';
+import { ComplexField, ValueChangedEvent, SelectableSectionFieldDefinition } from '@floreysoft/formsey-core';
 
 export class SelectableSectionValue {
   selection: string;

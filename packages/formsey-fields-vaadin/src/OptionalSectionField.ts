@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-combo-box/vaadin-combo-box.js';
 import { html, property } from 'lit-element';
-import { ComplexField, ValueChangedEvent, OptionalSectionFieldDefinition } from '@formsey/core';
+import { ComplexField, ValueChangedEvent, OptionalSectionFieldDefinition } from '@floreysoft/formsey-core';
 
 export class OptionalSectionValue {
   option: boolean;

@@ -1,6 +1,6 @@
 import { html } from 'lit-element';
 
-import { FieldDefinition, FieldFactory } from '@formsey/core';
+import { FieldDefinition, FieldFactory } from '@floreysoft/formsey-core';
 
 export class NativeFieldFactory extends FieldFactory {
   supportedFieldTypes = {

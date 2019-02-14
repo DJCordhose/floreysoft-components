@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-icons/vaadin-icons.js';
 import { LitElement, TemplateResult, html, property, query, queryAll, customElement } from 'lit-element';
-import { ValueChangedEvent, ComplexField, FieldFactory, FieldDefinition, FormDefinition, EditorDefinition } from '@formsey/core';
+import { ValueChangedEvent, ComplexField, FieldFactory, FieldDefinition, FormDefinition, EditorDefinition } from '@floreysoft/formsey-core';
 
 class ChangeEvent extends Event {
   index: number

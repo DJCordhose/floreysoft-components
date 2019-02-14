@@ -1,5 +1,5 @@
 import { html, property, customElement } from 'lit-element';
-import { Field, NumberFieldDefinition } from '@formsey/core';
+import { Field, NumberFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-number")
 export class NumberField extends Field<NumberFieldDefinition, Number> {

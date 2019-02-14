@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-icons/vaadin-icons.js';
 import { TemplateResult, html, property } from 'lit-element';
-import { ComplexField, FormDefinition, ValueChangedEvent, RepeatingFieldDefinition } from '@formsey/core';
+import { ComplexField, FormDefinition, ValueChangedEvent, RepeatingFieldDefinition } from '@floreysoft/formsey-core';
 
 export class RepeatingField extends ComplexField<RepeatingFieldDefinition, Object[]> {
   @property({ converter: Object })

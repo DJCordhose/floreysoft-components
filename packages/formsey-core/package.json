@@ -1,5 +1,5 @@
 {
-  "name": "@formsey/core",
+  "name": "@floreysoft/formsey-core",
   "version": "0.2.0",
   "description": "Formsey core components",
   "dependencies": {

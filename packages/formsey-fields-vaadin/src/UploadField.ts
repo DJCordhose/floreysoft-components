@@ -1,6 +1,6 @@
 import '@vaadin/vaadin-upload/vaadin-upload.js';
 import { html, property } from 'lit-element';
-import { Field, DateFieldDefinition } from '@formsey/core';
+import { Field, DateFieldDefinition } from '@floreysoft/formsey-core';
 
 export class UploadField extends Field<DateFieldDefinition, string> {
     @property({ type: String })

@@ -1,5 +1,5 @@
 import { html, property } from 'lit-element';
-import { Field, FieldDefinition } from '@formsey/core';
+import { Field, FieldDefinition } from '@floreysoft/formsey-core';
 
 interface YouTubeFieldDefinition extends FieldDefinition {
   url: string

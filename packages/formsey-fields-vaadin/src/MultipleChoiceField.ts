@@ -1,7 +1,7 @@
 import '@vaadin/vaadin-radio-button/vaadin-radio-button';
 import '@vaadin/vaadin-radio-button/vaadin-radio-group';
 import { TemplateResult, html, property } from 'lit-element';
-import { Field, ValueChangedEvent, CheckboxesFieldDefinition, Option } from '@formsey/core';
+import { Field, ValueChangedEvent, CheckboxesFieldDefinition, Option } from '@floreysoft/formsey-core';
 import { TextfieldElement } from '@vaadin/vaadin-text-field';
 
 class MultipleChoiceValue {

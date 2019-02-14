@@ -1,6 +1,6 @@
 import { html, property, customElement } from 'lit-element';
 import SignaturePad from 'signature_pad';
-import { Field, ValueChangedEvent, SignatureFieldDefinition } from '@formsey/core';
+import { Field, ValueChangedEvent, SignatureFieldDefinition } from '@floreysoft/formsey-core';
 
 @customElement("formsey-signature")
 export class SignatureField extends Field<SignatureFieldDefinition, string> {

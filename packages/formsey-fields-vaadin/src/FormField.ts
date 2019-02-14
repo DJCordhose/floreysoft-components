@@ -1,6 +1,6 @@
 import { html, property, LitElement, query, customElement } from 'lit-element';
 import { repeat } from 'lit-html/directives/repeat';
-import { FormDefinition, ComplexField, ValueChangedEvent, BooleanFieldDefinition } from '@formsey/core';
+import { FormDefinition, ComplexField, ValueChangedEvent, BooleanFieldDefinition } from '@floreysoft/formsey-core';
 import { mixinBehaviors } from '@polymer/polymer/lib/legacy/class.js';
 
 export class FormField extends ComplexField<FormDefinition, Object> {
