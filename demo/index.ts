@@ -8,5 +8,5 @@ import '@vaadin/vaadin-button/vaadin-button.js';
 import '@floreysoft/tabs'
 import '@floreysoft/dialog'
 import '@floreysoft/tree'
-import '@floreysoft/core'
+import '@floreysoft/formsey-core'
 import './Demo.ts'
