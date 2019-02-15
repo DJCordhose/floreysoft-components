@@ -5,7 +5,7 @@ export interface CreditCardFieldDefinition extends FieldDefinition {
   enabledAutofill : boolean
 }
 
-export class NameField extends CompoundField<CreditCardFieldDefinition, Object> {
+export class CreditCardField extends CompoundField<CreditCardFieldDefinition, Object> {
   @property({ converter: Object})
   value: Object;
 
@@ -26,4 +26,4 @@ export class NameField extends CompoundField<CreditCardFieldDefinition, Object> 
   }
 }
 
-customElements.define('formsey-creditcard', NameField);
+customElements.define('formsey-creditcard', CreditCardField);
