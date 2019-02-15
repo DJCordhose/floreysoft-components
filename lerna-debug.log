@@ -1,10 +1,10 @@
 0 silly argv { _: [ 'add' ],
+0 silly argv   scope: 'formsey-fields-vaadin',
 0 silly argv   globs: [],
 0 silly argv   lernaVersion: '3.10.7',
-0 silly argv   '$0': '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
-0 silly argv   pkg: 'firebase-ui' }
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@vaadin/vaadin-combo-bo' }
 1 notice cli v3.10.7
-2 verbose rootPath C:\Users\Daniel Florey\Develop\floreysoft-components
-3 error Error: 404 Not Found - GET https://registry.npmjs.org/firebase-ui - Not found
-3 error     at res.buffer.catch.then.body (C:\Users\Daniel Florey\Develop\floreysoft-components\node_modules\npm-registry-fetch\check-response.js:104:15)
-3 error     at <anonymous>
+2 verbose rootPath /Users/dflorey/Develop/floreysoft-components
+3 error Error: 404 Not Found - GET https://registry.npmjs.org/@vaadin%2fvaadin-combo-bo - Not found
+3 error     at res.buffer.catch.then.body (/Users/dflorey/Develop/floreysoft-components/node_modules/npm-registry-fetch/check-response.js:104:15)
