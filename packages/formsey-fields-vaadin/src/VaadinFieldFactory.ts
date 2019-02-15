@@ -1,12 +1,10 @@
 import { html } from 'lit-element';
 
-import './ListField.ts';
-import './BooleanField.ts';
-import './native/NumberField.ts';
-import './StringField.ts';
-import './TextField.ts';
+import './ListField';
+import './BooleanField';
+import './StringField';
+import './TextField';
 import './DateField';
-import './native/SignatureField';
 import './RepeatingField';
 import './OptionalSectionField';
 import './SelectableSectionField';
@@ -14,15 +12,14 @@ import './CheckboxesField';
 import './MultipleChoiceField';
 import './FormField';
 import './FieldsField';
-import './designer/FormDesignerField';
-import './compound/AddressField';
-import './compound/NameField';
-import './compound/CreditCardField';
 import './SourceCodeField';
 import './MarkupField';
 import './ImageField';
 import './YouTubeField';
 import './UploadField';
+import '@floreysoft/formsey-fields-compound/AddressField';
+import '@floreysoft/formsey-fields-compound/NameField';
+import '@floreysoft/formsey-fields-compound/CreditCardField';
 
 import { FieldFactory, FieldDefinition } from '@floreysoft/formsey-core';
 

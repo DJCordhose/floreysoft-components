@@ -1,5 +1,6 @@
 import { LitElement, customElement, property, html, css, CSSResult } from "lit-element";
-import { Dialog } from '../packages/floreysoft-dialog'
+import { Dialog } from '@floreysoft/dialog'
+import { VaadinFieldFactory } from '@floreysoft/formsey-fields-vaadin'
 
 @customElement("fs-demo-section")
 export class DemoSection extends LitElement {
@@ -104,6 +105,10 @@ export class Demo extends LitElement {
             <fs-tree header="File 3"></fs-tree>
             <fs-tree header="File 4"></fs-tree>
         </fs-tree>
+        <fs-demo-section title="Form" npm="@floreysoft/formsey-core" github="https://github.com/floreysoft/floreysoft-components/tree/master/packages/floreysoft-tree" minified="" gzipped="">
+        <p>Formsey</p>
+        </fs-demo-section>
+        <fs-form definition="{}" value="{}" .factory="${new VaadinFieldFactory()}"></fs-form>
         `
     }
 

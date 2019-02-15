@@ -1,9 +1,9 @@
 {
   "name": "@floreysoft/formsey-fields-native",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Native fields",
   "dependencies": {
-    "@floreysoft/formsey-core": "^0.2.4",
+    "@floreysoft/formsey-core": "^0.2.5",
     "lit-element": "^2.0.1",
     "signature_pad": "^3.0.0-beta.3"
   },

@@ -1,9 +1,10 @@
 {
   "name": "@floreysoft/formsey-fields-vaadin",
-  "version": "0.2.4",
+  "version": "0.2.10",
   "description": "Vaadin fields",
   "dependencies": {
-    "@floreysoft/formsey-core": "^0.2.4",
+    "@floreysoft/formsey-core": "^0.2.5",
+    "@floreysoft/formsey-fields-compound": "^0.2.5",
     "@vaadin/vaadin-checkbox": "^2.2.4",
     "@vaadin/vaadin-text-field": "^2.3.2",
     "ace-builds": "^1.4.2",

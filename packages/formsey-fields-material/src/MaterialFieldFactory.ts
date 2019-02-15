@@ -1,8 +1,9 @@
 import { html } from 'lit-element';
 
+import './BooleanField';
 import { FieldDefinition, FieldFactory } from '@floreysoft/formsey-core';
 
-export class NativeFieldFactory extends FieldFactory {
+export class MaterialFieldFactory extends FieldFactory {
   supportedFieldTypes = {
     'boolean': (fieldDefinition: FieldDefinition, value, handler) => html`<material-boolean-field @valueChanged="${handler}" .definition="${fieldDefinition}"  .value="${value}"> `,
     'number': (fieldDefinition: FieldDefinition, value, handler) => html`<native-number-field @valueChanged="${handler}" .definition="${fieldDefinition}"  .value="${value}"> `,

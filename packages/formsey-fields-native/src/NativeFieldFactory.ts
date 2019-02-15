@@ -1,8 +1,8 @@
 import { html } from 'lit-element';
 
-import './BooleanField.ts';
-import './NumberField.ts';
-import './StringField.ts';
+import './BooleanField';
+import './NumberField';
+import './StringField';
 import './DateField';
 import './SignatureField';
 import './FormField';
