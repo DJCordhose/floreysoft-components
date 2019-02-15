@@ -12,7 +12,8 @@
   },
   "main": "./dist/index.js",
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc && yarn copy-lib",
+    "copy-lib": "copyfiles -f ./src/webpack-resolver.js dist"
   },
   "license": "Apache-2.0",
   "publishConfig": {
