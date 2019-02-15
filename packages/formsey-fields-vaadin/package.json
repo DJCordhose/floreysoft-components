@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-fields-vaadin",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Vaadin fields",
   "dependencies": {
     "@floreysoft/formsey-core": "^0.2.11",
