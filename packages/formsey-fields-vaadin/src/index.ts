@@ -1,4 +1,4 @@
-import ace from 'ace-builds/src-min-noconflict/ace.js'
+import 'ace-builds/src-min-noconflict/ace.js'
 import "./webpack-resolver";
 
 export { BooleanField } from './BooleanField'
