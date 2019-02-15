@@ -1,34 +1,17 @@
 module.exports = function(config) {
   config.set({
-      frameworks: ["mocha", "karma-typescript"],
+      frameworks: ['mocha'],
       files: [
-          "packages/**/test/*.spec.ts"
+          'packages/**/test/*.spec.ts'
       ],
       preprocessors: {
-          "**/*.ts": "karma-typescript"
+          '**/*.ts': ['webpack', 'sourcemap']
       },
-      reporters: ["progress", "karma-typescript", 'mocha', 'coverage-istanbul'],
+      reporters: ['progress', 'mocha', 'coverage-istanbul'],
 
-      // browsers: ['ChromeHeadlessNoSandbox'],
-      browsers: ['Chrome'],
+      browsers: ['ChromeHeadlessNoSandbox'],
+      // browsers: ['Chrome'],
 
-      karmaTypescriptConfig: {
-        compilerOptions: {
-            "sourceMap": true, // allow sourcemap support
-            "declaration": true,
-            "moduleResolution": "node",
-            "experimentalDecorators": true,
-            lib: [
-              "es2018",
-              "dom"
-          ],
-          plugins: [
-            {
-                "name": "typescript-lit-html-plugin"
-            }
-          ]
-        },
-    },
       customLaunchers: {
         ChromeHeadlessNoSandbox: {
           base: 'ChromeHeadless',
@@ -61,7 +44,30 @@ module.exports = function(config) {
         },
       },
 
+      webpack: {
+        devtool: 'inline-source-map',
+        mode: 'development',
+        resolve: {
+          extensions: ['.js', '.ts']
+      },
+        module: {
+          rules: [
+            {
+              test: /\.js$/,
+              loader: 'babel-loader',
+              exclude: /node_modules\/(?!(@webcomponents\/shadycss|lit-element|lit-html|@polymer|@vaadin|@lit)\/).*/
+            },
+            {
+              test: /\.ts?$/,
+              use: ['babel-loader', 'ts-loader'],
+              exclude: /node_modules/
+            }
+          ]
+        }
+      },
+
+
       autoWatch: true,
-      singleRun: false
+      singleRun: true
   });
 };
