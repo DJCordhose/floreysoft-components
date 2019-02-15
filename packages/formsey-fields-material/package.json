@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-fields-material",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Material design fields",
   "dependencies": {
     "@floreysoft/formsey-core": "^0.2.5",
