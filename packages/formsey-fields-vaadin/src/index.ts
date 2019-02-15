@@ -1,3 +1,6 @@
+import "./webpack-resolver";
+import "ace-builds/src-min-noconflict/mode-javascript";
+
 export { BooleanField } from './BooleanField'
 export { CheckboxesField } from './CheckboxesField'
 export { DateField } from './DateField'
