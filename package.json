@@ -21,13 +21,13 @@
   },
   "scripts": {
     "dependencies": "lerna bootstrap",
-    "compile": "lerna run tsc",
+    "compile": "tsc && lerna run tsc",
     "build": "webpack --config webpack.prod.js",
     "pub": "lerna run tsc && lerna publish",
     "start": "webpack-dev-server --open  --config webpack.dev.js"
   },
   "dependencies": {
-    "@floreysoft/formsey-fields-vaadin": "^0.2.4",
+    "@floreysoft/formsey-fields-vaadin": "^0.2.5",
     "@vaadin/vaadin-button": "^2.1.3",
     "@vaadin/vaadin-context-menu": "^4.3.1",
     "@vaadin/vaadin-split-layout": "^4.1.0"

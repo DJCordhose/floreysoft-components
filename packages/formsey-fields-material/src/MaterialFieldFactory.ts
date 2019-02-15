@@ -1,5 +1,6 @@
 import { html } from 'lit-element';
 
+import './BooleanField';
 import { FieldDefinition, FieldFactory } from '@floreysoft/formsey-core';
 
 export class MaterialFieldFactory extends FieldFactory {

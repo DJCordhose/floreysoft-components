@@ -1,10 +1,10 @@
 import { html } from 'lit-element';
 
-import './ListField.ts';
-import './BooleanField.ts';
-import './native/NumberField.ts';
-import './StringField.ts';
-import './TextField.ts';
+import './ListField';
+import './BooleanField';
+import './native/NumberField';
+import './StringField';
+import './TextField';
 import './DateField';
 import './native/SignatureField';
 import './RepeatingField';
