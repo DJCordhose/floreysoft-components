@@ -2,7 +2,6 @@ import { html } from 'lit-element';
 
 import './ListField';
 import './BooleanField';
-import './native/NumberField';
 import './StringField';
 import './TextField';
 import './DateField';
