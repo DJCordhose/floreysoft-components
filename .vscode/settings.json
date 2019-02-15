@@ -3,5 +3,11 @@
         "titleBar.activeForeground": "#ffffff",
         "titleBar.activeBackground": "#006000",
         "activityBar.background": "#006000"
+    },
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
     }
+
 }
