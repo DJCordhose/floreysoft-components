@@ -1,5 +1,5 @@
+import ace from 'ace-builds/src-min-noconflict/ace.js'
 import "./webpack-resolver";
-import "ace-builds/src-min-noconflict/mode-javascript";
 
 export { BooleanField } from './BooleanField'
 export { CheckboxesField } from './CheckboxesField'
