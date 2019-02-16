@@ -1,26 +1,33 @@
-import { defineCE, fixture } from '@open-wc/testing-helpers';
-import { expect } from 'chai';
+import { html, fixture, expect } from '@open-wc/testing';
 
-import { StringField } from '../src/StringField';
+import '../src/StringField';
 
-describe('string field', () => {
-  // const CEStringField = defineCE(class extends StringField {});
-  const CEStringField = defineCE(class extends StringField {});
 
-  let field;
-  let native;
+describe('<formsey-string>', () => {
+  it('native input should have type="text"', async () => {
+    const definition = {
 
-  beforeEach(async () => {
-    field = await fixture(`<${CEStringField}></${CEStringField}>`);
-    native = field.shadowRoot.querySelector('input');
+    }
+    const el: any = await fixture(`<formsey-string definition="${
+      definition
+    }"></formsey-string>`);
+    const native = el.shadowRoot.querySelector('input');
+    expect(native.getAttribute('type')).to.be.eql('text');
   });
 
-  it('native input should have type="input"', () => {
-    expect(native.getAttribute('type')).to.be.eql('input');
+
+  it('properly initializes value in native widget', async () => {
+    const value = 'hiho';
+    const definition = {
+
+    }
+    const el: any = await fixture(`<formsey-string value="${value}" definition="${
+      definition
+    }"></formsey-string>`);
+    expect(el).not.to.be.undefined;
+    const native = el.shadowRoot.querySelector('input');
+    expect(native).not.to.be.undefined;
+    expect(native.value).to.be.eql(value);
+
   });
-
-  // it('something works', () => {
-  //   expect('input').to.be.eql('input');
-  // });
-
 });
