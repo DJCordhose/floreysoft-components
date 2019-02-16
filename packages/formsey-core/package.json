@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-core",
-  "version": "0.2.5",
+  "version": "0.2.11",
   "description": "Formsey core components",
   "dependencies": {
     "lit-element": "^2.0.1"
