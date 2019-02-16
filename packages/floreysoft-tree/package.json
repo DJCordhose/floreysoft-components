@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/tree",
-  "version": "0.2.0",
+  "version": "0.2.16",
   "description": "Tree",
   "dependencies": {
     "@vaadin/vaadin-context-menu": "^4.3.1",

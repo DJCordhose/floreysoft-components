@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-fields-native",
-  "version": "0.2.11",
+  "version": "0.2.16",
   "description": "Native fields",
   "dependencies": {
     "@floreysoft/formsey-core": "^0.2.11",
