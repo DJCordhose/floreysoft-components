@@ -4,6 +4,7 @@
         "titleBar.activeBackground": "#006000",
         "activityBar.background": "#006000"
     },
+    "files.autoSave": "onWindowChange",
     "editor.tabSize": 2,
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
