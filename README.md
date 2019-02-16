@@ -1,6 +1,5 @@
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+
 # floreysoft-components
-https://lernajs.io/
-https://blog.logrocket.com/setting-up-a-monorepo-with-lerna-for-a-typescript-project-b6a81fe8e4f8
-https://yarnpkg.com/lang/en/docs/workspaces/
-https://medium.com/@jsilvax/a-workflow-guide-for-lerna-with-yarn-workspaces-60f97481149d
-https://github.com/material-components/material-components-web-components
+
+Collection of form components that can be configured from a centralized json file or JavaScript object
