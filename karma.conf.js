@@ -1,16 +1,17 @@
+
 module.exports = function(config) {
   config.set({
-      frameworks: ['mocha'],
-      files: [
+    frameworks: ['mocha', 'source-map-support'],
+    files: [
           'packages/**/test/*.spec.ts'
       ],
       preprocessors: {
           '**/*.ts': ['webpack', 'sourcemap']
       },
-      reporters: ['progress', 'mocha', 'coverage-istanbul'],
+      reporters: ['mocha', 'coverage-istanbul'],
 
-      browsers: ['ChromeHeadlessNoSandbox'],
-      // browsers: ['Chrome'],
+      // browsers: ['ChromeHeadlessNoSandbox'],
+      browsers: ['Chrome'],
 
       customLaunchers: {
         ChromeHeadlessNoSandbox: {
@@ -66,8 +67,8 @@ module.exports = function(config) {
         }
       },
 
-
-      autoWatch: true,
-      singleRun: true
-  });
+      autoWatch: false,
+      singleRun: true,
+      concurrency: Infinity
+      });
 };
