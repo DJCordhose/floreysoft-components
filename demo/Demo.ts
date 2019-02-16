@@ -81,7 +81,7 @@ export class Demo extends LitElement {
         <fs-demo-section title="Tree" npm="@floreysoft/tree" github="https://github.com/floreysoft/floreysoft-components/tree/master/packages/floreysoft-tree" minified="" gzipped="">
         <p>Lazy loading of tree nodes, lazy loading of children in chunks on scroll, nice animation on open, individual context actions on nodes</p>
         </fs-demo-section>
-        <fs-tree header="My drive" indent=20>
+        <fs-tree header="My drive">
             <fs-tree header="File 1"></fs-tree>
             <fs-tree header="Invoices">
                 <fs-tree header="Invoice 123-456"></fs-tree>
@@ -93,7 +93,7 @@ export class Demo extends LitElement {
             <fs-tree header="File 3"></fs-tree>
             <fs-tree header="File 4"></fs-tree>
         </fs-tree>
-        <fs-tree header="Teamdrives" indent=20>
+        <fs-tree header="Teamdrives">
             <fs-tree header="File 1"></fs-tree>
             <fs-tree header="Invoices">
                 <fs-tree header="Invoice 123-456"></fs-tree>

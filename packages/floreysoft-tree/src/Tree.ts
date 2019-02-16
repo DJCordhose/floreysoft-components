@@ -64,7 +64,7 @@ export class Tree extends LitElement {
         super();
         this._open = false
         this._maxHeight = 0
-        this.indent = 0
+        this.indent = 20
         this.level = 0
     }
 
@@ -80,31 +80,31 @@ export class Tree extends LitElement {
             font-family: var(--lumo-font-family);
             font-size: var(--lumo-font-size-m);
             font-weight: 500;
-            color: var(--lumo-primary-color);       
+            color: var(--lumo-primary-color);
             outline: none;
-            padding: var(--lumo-space-xs);   
+            padding: var(--lumo-space-xs);
         }
         header span {
             user-select: none
-            margin-left: var(--lumo-space-s);         
+            margin-left: var(--lumo-space-s);
         }
         header .default {
             vertical-align: middle;
             margin-left: 4px;
         }
         header:focus {
-            color: var(--lumo-contrast-color); 
+            color: var(--lumo-contrast-color);
             background-color: var(--lumo-shade-10pct);
         }
         svg {
             width: 10px;
             vertical-align: middle;
             fill: var(--lumo-primary-color);
-            transition: .2s all ease-out; 
-            margin-left: var(--lumo-space-s);         
+            transition: .2s all ease-out;
+            margin-left: var(--lumo-space-s);
         }
         .leaf {
-            
+
         }
         svg.open {
             transform: rotate(90deg);
@@ -123,7 +123,7 @@ export class Tree extends LitElement {
             stroke-width: 8;
             transform-origin: center;
             animation: rotating 0.6s linear infinite;
-        }         
+        }
         @keyframes rotating {
             from {
               transform: rotate(0deg);
@@ -220,6 +220,12 @@ export class Tree extends LitElement {
             nestedTree.addEventListener("stateChanged", (e: CustomEvent) => this.adjustMaxHeight(e))
             nestedTree.addEventListener("action", (e: CustomEvent) => this.do(e.detail))
             nestedTree.setAttribute("observed", "true")
+            if( typeof nestedTree.level === "undefined" ) {
+                nestedTree.level = this.level+1
+            }
+            if( typeof nestedTree.indent === "undefined" ) {
+                nestedTree.indent =  this.indent
+            }
         })
         let observer = new IntersectionObserver(this.onLoaderVisible.bind(this), { threshold: 0.1 })
         this._loaders.forEach(loader => this.obverve(observer, loader))
