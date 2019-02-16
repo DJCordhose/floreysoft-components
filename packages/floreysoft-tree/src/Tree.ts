@@ -39,8 +39,8 @@ export class Tree extends LitElement {
     @property({ converter: Object }) node: TreeNode
     @property({ type: Boolean }) hasNodes: boolean
     @property() header: string
-    @property({ type: Number }) level: number
-    @property({ type: Number }) indent: number
+    @property({ type: Number, reflect: true }) level: number
+    @property({ type: Number, reflect: true }) indent: number
     @property({ type: Array }) actions: string[] | undefined
     @query("section") private _section: HTMLElement
     @query("header") private _header: HTMLElement
@@ -203,9 +203,7 @@ export class Tree extends LitElement {
             this.hasNodes = true
             if ( nestedTree instanceof Tree) {
                 if (!nestedTree.getAttribute("observed")) {
-                    if( typeof nestedTree.level === "undefined" ) {
-                        nestedTree.level = this.level+1
-                    }
+                    nestedTree.level = this.level+1
                     if( typeof nestedTree.indent === "undefined" ) {
                         nestedTree.indent =  this.indent
                     }
@@ -220,9 +218,7 @@ export class Tree extends LitElement {
             nestedTree.addEventListener("stateChanged", (e: CustomEvent) => this.adjustMaxHeight(e))
             nestedTree.addEventListener("action", (e: CustomEvent) => this.do(e.detail))
             nestedTree.setAttribute("observed", "true")
-            if( typeof nestedTree.level === "undefined" ) {
-                nestedTree.level = this.level+1
-            }
+            nestedTree.level = this.level+1
             if( typeof nestedTree.indent === "undefined" ) {
                 nestedTree.indent =  this.indent
             }
