@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/formsey-fields-native",
-  "version": "0.2.17",
+  "version": "0.2.19",
   "description": "Native fields",
   "files": [
     "/dist/",
