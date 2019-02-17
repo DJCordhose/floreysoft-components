@@ -1,19 +1,18 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/", // path to output directory
-        "inlineSources": true,
-        "inlineSourceMap": true,
-        "strictNullChecks": true, // enable strict null checks as a best practice
-        "module": "es6", // specify module code generation
-        "target": "es6", // specify ECMAScript target version
+        "outDir": "./",
+        "target": "es2017",
+        "module": "es2015",
+        "moduleResolution": "node",
         "lib": [
             "es2018",
             "dom"
         ],
         "declaration": true,
-        "moduleResolution": "node",
+        "declarationMap": true,
+        "sourceMap": true,
+        "inlineSources": true,
         "experimentalDecorators": true,
-        "downlevelIteration": true,
         "plugins": [
             {
                 "name": "typescript-lit-html-plugin"
@@ -22,7 +21,7 @@
     },
     "include": [
         "custom_typings/**/*.ts",
-        "demo/*.ts"
+        "demo/**/*.ts"
     ],
     "exclude": []
 }

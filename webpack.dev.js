@@ -5,25 +5,25 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
     mode: 'development',
-    devtool: 'inline-source-map',
+    devtool: 'cheap-module-source-map',
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         port: 8080,
         hot: true
-        
+
     },
     module: {
-        rules: [                  
+        rules: [
             {
                 test: /\.ts?$/,
                 use: ['ts-loader'],
-                exclude: /node_modules/
-            }
-          
+                exclude: /node_modules/,
+            },
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
-    },    
+    },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-     
-    ]    
+
+    ]
 });
