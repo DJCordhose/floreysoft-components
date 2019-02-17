@@ -2,6 +2,11 @@
   "name": "@floreysoft/formsey-fields-material",
   "version": "0.2.11",
   "description": "Material design fields",
+  "files": [
+    "/dist/",
+    "/src/",
+    "!/test/"
+  ],
   "dependencies": {
     "@floreysoft/formsey-core": "^0.2.11",
     "@material/mwc-checkbox": "^0.3.3",

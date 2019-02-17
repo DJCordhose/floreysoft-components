@@ -1,6 +1,11 @@
 {
   "name": "@floreysoft/firebase-login",
   "version": "0.2.0",
+  "files": [
+    "/dist/",
+    "/src/",
+    "!/test/"
+  ],
   "dependencies": {
     "@floreysoft/dialog": "^0.2.0",
     "@vaadin/vaadin-text-field": "^2.3.2",

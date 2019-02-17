@@ -2,6 +2,11 @@
   "name": "@floreysoft/formsey-core",
   "version": "0.2.11",
   "description": "Formsey core components",
+  "files": [
+    "/dist/",
+    "/src/",
+    "!/test/"
+  ],
   "dependencies": {
     "lit-element": "^2.0.1"
   },
