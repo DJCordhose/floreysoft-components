@@ -32,7 +32,7 @@
   "scripts": {
     "init": "yarn compile && yarn dependencies",
     "dependencies": "lerna bootstrap",
-    "compile": "tsc && lerna run tsc",
+    "compile": "lerna run tsc && tsc",
     "build": "webpack --config webpack.prod.js",
     "pub": "lerna run tsc && lerna publish",
     "start": "webpack-dev-server --open  --config webpack.dev.js",
