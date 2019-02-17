@@ -4,6 +4,7 @@ import "./webpack-resolver";
 import "ace-builds/src-min-noconflict/mode-javascript";
 import { Field, ValueChangedEvent, FieldDefinition } from '@floreysoft/formsey-core';
 
+@customElement("formsey-sourcecode")
 export class SourceCodeField extends Field<FieldDefinition, string> {
   @property({ type: String })
   set value(value: string) {
@@ -16,6 +17,9 @@ export class SourceCodeField extends Field<FieldDefinition, string> {
 
   @property()
   mode : string = "javascript"
+
+  @property()
+  theme : string = "tomorrow_night.css"
 
   @property({ type: Number })
   width: Number;
@@ -63,7 +67,7 @@ export class SourceCodeField extends Field<FieldDefinition, string> {
 
   updated(changedProperties : PropertyValues) {
     this.updateOptions()
-  }  
+  }
 
   resize() {
     if (this.editor) {
@@ -80,9 +84,8 @@ export class SourceCodeField extends Field<FieldDefinition, string> {
   protected updateOptions() {
     if (this.editor) {
         this.editor.renderer.setShowGutter(this.gutter)
+        this.editor.setTheme("ace/theme/"+this.theme)
         this.editor.session.setMode("ace/mode/"+this.mode)
     }
   }
 }
-
-customElements.define('formsey-sourcecode', SourceCodeField);
