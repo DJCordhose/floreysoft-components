@@ -30,7 +30,7 @@
     "webpack-merge": "^4.2.1"
   },
   "scripts": {
-    "init": "yarn compile && yarn dependencies",
+    "setup": "yarn compile && yarn dependencies",
     "dependencies": "lerna bootstrap",
     "compile": "lerna run tsc && tsc",
     "build": "webpack --config webpack.prod.js",
