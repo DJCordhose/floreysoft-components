@@ -1,6 +1,6 @@
 import { LitElement, customElement, property, html, css, CSSResult } from "lit-element";
 import { Dialog } from '@floreysoft/dialog'
-import { VaadinFieldFactory } from '@floreysoft/formsey-fields-vaadin'
+import { VaadinFieldFactory as Factory } from '@floreysoft/formsey-fields-vaadin'
 
 @customElement("fs-demo-section")
 export class DemoSection extends LitElement {
@@ -107,9 +107,9 @@ export class Demo extends LitElement {
         </fs-tree>
         <fs-demo-section title="Form" npm="@floreysoft/formsey-core" github="https://github.com/floreysoft/floreysoft-components/tree/master/packages/formsey-core" minified="" gzipped="">
         <p>Formsey</p>
-        <fs-form src="https://www.formsey.com/form/25eKDUrAPVnTm2yM0WoK.json" .factory="${new VaadinFieldFactory()}"></fs-form>
+        <fs-form src="https://www.formsey.com/form/25eKDUrAPVnTm2yM0WoK.json" .factory="${new Factory()}"></fs-form>
         <fs-dialog id="formDialog" header="Enter form" buttons='[{ "label" : "Submit", "theme" : "primary"}, { "label" : "Cancel", "theme" : "secondary"}]'>
-           <fs-form src="https://www.formsey.com/form/25eKDUrAPVnTm2yM0WoK.json" .factory="${new VaadinFieldFactory()}"></fs-form>
+           <fs-form src="https://www.formsey.com/form/25eKDUrAPVnTm2yM0WoK.json" .factory="${new Factory()}"></fs-form>
         </fs-dialog>
         <vaadin-button @click=${e => this.openDialog("formDialog")}>Show form</vaadin-button>
         </fs-demo-section>
