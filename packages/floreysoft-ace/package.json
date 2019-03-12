@@ -1,0 +1,25 @@
+{
+  "name": "@floreysoft/ace",
+  "version": "0.3.0",
+  "description": "Ace editor",
+  "files": [
+    "/*.js.map",
+    "/*.d.ts.map",
+    "/*.js",
+    "/*.d.ts",
+    "!/test/"
+  ],
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "ace-builds": "^1.4.2"
+  },
+  "main": "./Ace.js",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "06d5c5264a82e3269b390fba4a728ca5358234b4"
+}
