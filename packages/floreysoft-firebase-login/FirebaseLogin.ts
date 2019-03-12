@@ -16,6 +16,9 @@ export class FirebaseLogin extends LitElement {
     @query("fs-dialog")
     private loginDialog: Dialog
 
+    @query("#firebase-container")
+    private firebaseContainer : HTMLElement
+
     private ui: firebaseui.auth.AuthUI
     private options: Object
 
@@ -91,7 +94,7 @@ export class FirebaseLogin extends LitElement {
 
     login() {
         this.ui.reset()
-        this.ui.start('#firebaseui-auth-container', this.options)
+        this.ui.start(this.firebaseContainer, this.options)
         this.loginDialog.open = true
     }
 
