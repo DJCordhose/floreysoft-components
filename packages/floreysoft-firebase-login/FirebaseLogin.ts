@@ -75,7 +75,7 @@ export class FirebaseLogin extends LitElement {
         } else {
             template = html`<span>Sign in to save your work -></span> <vaadin-button @click=${this.login} theme="primary">Login</vaadin-button>`
         }
-        return html`${template}<fs-dialog header="Login" buttons='[{ "label" : "Close", "id" : "close" }]'><div id="firebaseui-auth-container"></div></fs-dialog>`
+        return html`${template}<fs-dialog header="Login" buttons='[{ "label" : "Close", "id" : "close" }]'><div id="firebase-container"></div></fs-dialog>`
     }
 
     firstUpdated() {
