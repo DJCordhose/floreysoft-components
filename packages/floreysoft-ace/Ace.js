@@ -59,7 +59,7 @@ let Ace = class Ace extends LitElement {
     }
     valueChanged() {
         if (!this.silent) {
-            this.dispatchEvent(new CustomEvent('changed', this.editor.getValue()));
+            this.dispatchEvent(new CustomEvent('changed', { detail: { value: this.editor.getValue() } }));
         }
     }
     updateOptions() {
