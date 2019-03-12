@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/tabs",
-  "version": "0.2.20",
+  "version": "0.3.0",
   "description": "Tabs",
   "files": [
     "/*.js.map",
