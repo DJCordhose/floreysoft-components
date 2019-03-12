@@ -8,7 +8,7 @@ import { html, property, query, customElement, LitElement, css } from 'lit-eleme
 import ace from 'ace-builds/src-min-noconflict/ace.js';
 import "./webpack-resolver";
 import "ace-builds/src-min-noconflict/mode-javascript";
-let SourceCodeField = class SourceCodeField extends LitElement {
+let Ace = class Ace extends LitElement {
     constructor() {
         super(...arguments);
         this.mode = "javascript";
@@ -72,27 +72,27 @@ let SourceCodeField = class SourceCodeField extends LitElement {
 };
 __decorate([
     property({ type: String })
-], SourceCodeField.prototype, "value", null);
+], Ace.prototype, "value", null);
 __decorate([
     property()
-], SourceCodeField.prototype, "mode", void 0);
+], Ace.prototype, "mode", void 0);
 __decorate([
     property()
-], SourceCodeField.prototype, "theme", void 0);
+], Ace.prototype, "theme", void 0);
 __decorate([
     property({ type: Number })
-], SourceCodeField.prototype, "width", void 0);
+], Ace.prototype, "width", void 0);
 __decorate([
     property({ type: Number })
-], SourceCodeField.prototype, "height", void 0);
+], Ace.prototype, "height", void 0);
 __decorate([
     property({ type: Boolean })
-], SourceCodeField.prototype, "gutter", void 0);
+], Ace.prototype, "gutter", void 0);
 __decorate([
     query("#editor")
-], SourceCodeField.prototype, "div", void 0);
-SourceCodeField = __decorate([
+], Ace.prototype, "div", void 0);
+Ace = __decorate([
     customElement("floreysoft-ace")
-], SourceCodeField);
-export { SourceCodeField };
+], Ace);
+export { Ace };
 //# sourceMappingURL=Ace.js.map

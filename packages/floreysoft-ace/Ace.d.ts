@@ -1,7 +1,7 @@
 import { PropertyValues, LitElement, CSSResult } from 'lit-element';
 import "./webpack-resolver";
 import "ace-builds/src-min-noconflict/mode-javascript";
-export declare class SourceCodeField extends LitElement {
+export declare class Ace extends LitElement {
     value: string;
     mode: string;
     theme: string;
