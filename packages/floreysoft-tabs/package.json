@@ -9,6 +9,7 @@
     "/*.d.ts",
     "!/test/"
   ],
+  "main": "./Tabs.js",
   "dependencies": {
     "lit-element": "^2.0.1"
   },
