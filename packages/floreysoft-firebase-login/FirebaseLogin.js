@@ -80,7 +80,7 @@ let FirebaseLogin = class FirebaseLogin extends LitElement {
     }
     login() {
         this.ui.reset();
-        this.ui.start('#firebaseui-auth-container', this.options);
+        this.ui.start(this.firebaseContainer, this.options);
         this.loginDialog.open = true;
     }
     logout() {
@@ -90,6 +90,9 @@ let FirebaseLogin = class FirebaseLogin extends LitElement {
 __decorate([
     query("fs-dialog")
 ], FirebaseLogin.prototype, "loginDialog", void 0);
+__decorate([
+    query("#firebase-container")
+], FirebaseLogin.prototype, "firebaseContainer", void 0);
 FirebaseLogin = __decorate([
     customElement("fs-firebase-login")
 ], FirebaseLogin);

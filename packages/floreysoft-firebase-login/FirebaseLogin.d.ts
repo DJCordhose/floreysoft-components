@@ -8,6 +8,7 @@ export declare class FirebaseLogin extends LitElement {
     user: firebase.User;
     accountMerger: AccountMerger;
     private loginDialog;
+    private firebaseContainer;
     private ui;
     private options;
     constructor();
