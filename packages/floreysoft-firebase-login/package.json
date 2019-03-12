@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/firebase-login",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "files": [
     "/*.js.map",
     "/*.d.ts.map",
