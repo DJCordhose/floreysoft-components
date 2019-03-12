@@ -1,27 +1,35 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        "target": "es2017",
-        "module": "es2015",
-        "moduleResolution": "node",
-        "lib": [
-            "es2018",
-            "dom"
-        ],
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "inlineSources": true,
-        "experimentalDecorators": true,
-        "plugins": [
-            {
-                "name": "typescript-lit-html-plugin"
-            }
-        ]
+      "target": "es2017",
+      "module": "es2015",
+      "moduleResolution": "node",
+      "lib": ["es2018", "dom"],
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "strict": false,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": false,
+      "noImplicitThis": false,
+      "experimentalDecorators": true,
+      "pretty": true
     },
     "include": [
-        "custom_typings/**/*.ts",
-        "demo/**/*.ts"
+      "custom_typings/**/*.ts",
+      "**/*.ts"
     ],
-    "exclude": []
+    "exclude": [
+        "node_modules",
+        "**/*.d.ts",
+        "**/*.spec.ts"
+    ],
+    "plugins": [
+      {
+          "name": "typescript-lit-html-plugin"
+      }
+    ]
 }

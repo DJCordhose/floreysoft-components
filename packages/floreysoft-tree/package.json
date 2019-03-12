@@ -3,15 +3,17 @@
   "version": "0.2.20",
   "description": "Tree",
   "files": [
-    "/dist/",
-    "/src/",
+    "/*.js.map",
+    "/*.d.ts.map",
+    "/*.js",
+    "/*.d.ts",
     "!/test/"
   ],
   "dependencies": {
     "@vaadin/vaadin-context-menu": "^4.3.1",
     "lit-element": "^2.0.1"
   },
-  "main": "./dist/Tree.js",
+  "main": "./Tree.js",
   "scripts": {
     "tsc": "tsc"
   },

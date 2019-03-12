@@ -27,7 +27,9 @@ export class Dialog extends LitElement {
     }
 
     render() {
-        if ( !this.buttons ) return
+        if ( !this.buttons ) {
+            return html``
+        }
         return html`
         <style>
         .backdrop, .dialogWrapper {
@@ -118,7 +120,7 @@ export class Dialog extends LitElement {
         let left = this._dialog.style.left ? parseInt(this._dialog.style.left,10) : 0
         let top = this._dialog.style.top ? parseInt(this._dialog.style.top,10) : 0
         this.x = e.screenX - left
-        this.y = e.screenY - top  
+        this.y = e.screenY - top
         this.dragging = true;
         this._dialogWrapper.style.pointerEvents = "auto"
     }
