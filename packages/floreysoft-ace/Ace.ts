@@ -7,9 +7,10 @@ import "ace-builds/src-min-noconflict/mode-javascript";
 export class Ace extends LitElement {
   @property({ type: String })
   set value(value: string) {
-    if (this.editor && this.editor.getValue() != value) {
+    if (this.editor && value !== this.text ) {
       this.silent = true
       this.editor.setValue(value, -1)
+      this.text = value;
       this.silent = false
     }
   }
@@ -34,6 +35,7 @@ export class Ace extends LitElement {
 
   private editor: ace
   private silent: boolean = false
+  private text : string
 
   static get styles() : CSSResult[] {
     return [css`
@@ -76,7 +78,8 @@ export class Ace extends LitElement {
 
   protected valueChanged() {
     if ( !this.silent ) {
-      this.dispatchEvent(new CustomEvent('changed', { detail: { value : this.editor.getValue() }} ))
+      this.text = this.editor.getValue();
+      this.dispatchEvent(new CustomEvent('changed', { detail: { value : this.text }} ))
     }
   }
 
