@@ -1,6 +1,6 @@
 {
   "name": "@floreysoft/ace",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Ace editor",
   "files": [
     "/*.js.map",
@@ -10,8 +10,8 @@
     "!/test/"
   ],
   "dependencies": {
-    "lit-element": "^2.0.1",
-    "ace-builds": "^1.4.2"
+    "ace-builds": "^1.4.2",
+    "lit-element": "^2.0.1"
   },
   "main": "./Ace.js",
   "scripts": {
