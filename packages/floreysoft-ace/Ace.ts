@@ -4,7 +4,7 @@ import "./webpack-resolver";
 import "ace-builds/src-min-noconflict/mode-javascript";
 
 @customElement("floreysoft-ace")
-export class SourceCodeField extends LitElement {
+export class Ace extends LitElement {
   @property({ type: String })
   set value(value: string) {
     if (this.editor) {
